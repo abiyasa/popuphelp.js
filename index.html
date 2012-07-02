@@ -7,7 +7,7 @@
     <meta name="description" content="Popuphelp.js : A simple popup help using Backbone.js and Twitter Bootstrap" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
+    <script src="javascripts/main.js"></script>
     <title>Popuphelp.js</title>
   </head>
 
@@ -41,7 +41,20 @@
 <li>Direct linking supported, you can open help popup and it directly shows the specified content</li>
 <li>Add new help topic/content easily. Help content files are loaded dynamically</li>
 <li>Customize and style the popup using Twitter Bootstrap</li>
-</ul><h2>How to add a new help topic</h2>
+</ul>
+
+<h2>How to use</h2>
+<ul>
+<li>Add popuphelp.js to a subfolder of your web app project. You can name the subfolder <code>popuphelp</code> or anything you like.</li>
+<li>Show the popup by just creating popup using JavaScript:
+<br /><code>window.open('popuphelp/', 'popup-help', 'width=1024,height=768;')</code>
+</li>
+<li>If you want to show specific help topic 'help01':
+<br /><code>window.open('popuphelp/#help01', 'popup-help', 'width=1024,height=768;')</code>
+</li>
+</ul>
+
+<h2>How to add a new help topic</h2>
 
 <ul>
 <li>Create an HTML file on folder <code>topics</code>, containing the help text.</li>
@@ -62,8 +75,9 @@
 </ul><h2>Demo</h2>
 
 <ul>
-<li>click here to show popup help with default topic: link (TBD)</li>
-<li>click here to show popup help with default topic: link (TBD)</li>
+<li><a href="" onclick="showPopupHelp('popuphelp/')">show popup help</a></li>
+<li><a href="" onclick="showPopupHelp('popuphelp/#help01')">show popup help topic 'help01'</a></li>
+<li><a href="" onclick="showPopupHelp('popuphelp/#help04')">show popup help topic 'help04'</a></li>
 </ul>
       </section>
     </div>
