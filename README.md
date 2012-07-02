@@ -7,8 +7,13 @@ A simple popup help showing list of topics and the help content. Implemented usi
 * Customize and style the popup using Twitter Bootstrap
 
 ## How to use
-* Add/extract this popup help to your web app project
-* Create a simple javascript to show the popup: TBD
+* Add popuphelp.js to a subfolder of your web app project. You can name the subfolder `popuphelp` or anything you like.
+* Show the popup by just creating popup using JavaScript:
+ 
+   `window.open('popuphelp/', 'popup-help', 'width=1024,height=768;')`
+* If you want to show specific help topic 'help01':
+
+   `window.open('popuphelp/#help01', 'popup-help', 'width=1024,height=768;')`
 
 ## How to add a new help topic
 * Create an HTML file on folder `topics`, containing the help text.
@@ -20,5 +25,4 @@ A simple popup help showing list of topics and the help content. Implemented usi
 * Note: By default, `welcome.html` will be displayed as default topic
 
 ## Demo
-* click here to show popup help with default topic: link (TBD)
-* click here to show popup help with default topic: link (TBD)
+[Demo page](http://abiyasa.github.com/popuphelp.js/)
