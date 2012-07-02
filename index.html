@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Popup Help</title>
+    
+    <meta name="author" content="abiyasa">
+    <meta name="description" content="Popup help">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+</head>
+
+<body>
+    <!-- top navigation bar -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+              <a class="brand" href="#">Popup Help</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <!-- sidebar -->
+            <div id="sidebar" class="span4">
+                <div class="well sidebar-nav">
+                    <ul id="topic-list" class="nav nav-list">
+                        <!-- topic list is dynamically loaded and injected by Backbone -->
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="mainbar" class="span8">    
+                <!-- topic content is dynamically loaded and injected by Backbone -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Template for topic list -->    
+    <script type="text/template" id="tpl-topic-list-item">    
+      <a href='#<%= id %>'><%= label %></a>
+    </script>
+
+    <!-- Template for unknown help topic -->    
+    <script type="text/template" id="tpl-topic-not-found">    
+      <h1>Error</h1>
+      <p>Help topic not found</p>
+    </script>
+
+    <!-- script -->
+    <script src="js/lib/jquery-1.7.2.min.js"></script>
+    <script src="js/lib/underscore-min.js"></script>
+    <script src="js/lib/backbone-min.js"></script>
+    <script src="js/popup-help.js"></script>
+</body>
+</html>
+

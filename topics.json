@@ -1,0 +1,27 @@
+[
+  {
+    "id": "welcome",
+    "label": "Introduction",
+    "contentUrl": "topics/welcome.html"
+  },
+  {
+    "id": "help01",
+    "label": "Help Topic 1",
+    "contentUrl": "topics/help01.html"
+  },
+  {
+    "id": "help02",
+    "label": "Help Topic 2",
+    "contentUrl": "topics/help02.html"
+  },
+  {
+    "id": "help03",
+    "label": "Help Topic 3",
+    "contentUrl": "topics/help03.html"
+  },
+  {
+    "id": "help04",
+    "label": "Help Topic 4",
+    "contentUrl": "topics/help04.html"
+  }
+]
