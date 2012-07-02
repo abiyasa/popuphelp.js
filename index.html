@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Popuphelp.js : A simple popup help using Backbone.js and Twitter Bootstrap" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Popuphelp.js</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/abiyasa/popuphelp.js">View on GitHub</a>
+
+          <h1 id="project_title">Popuphelp.js</h1>
+          <h2 id="project_tagline">A simple popup help using Backbone.js and Twitter Bootstrap</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/abiyasa/popuphelp.js/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/abiyasa/popuphelp.js/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Popup Help</h1>
+
+<p>A simple popup help showing list of topics and the help content. Implemented using Backbone.js and Twitter Bootstrap</p>
+
+<h2>Features</h2>
+
+<ul>
+<li>Direct linking supported, you can open help popup and it directly shows the specified content</li>
+<li>Add new help topic/content easily. Help content files are loaded dynamically</li>
+<li>Customize and style the popup using Twitter Bootstrap</li>
+</ul><h2>How to add a new help topic</h2>
+
+<ul>
+<li>Create an HTML file on folder <code>topics</code>, containing the help text.</li>
+<li>If you need to add image or asset, add it to folder <code>topics/img</code>
+</li>
+<li>Add an entry at <code>topics.json</code> with properties:
+
+<ul>
+<li>
+<code>id</code> : unique string identifier, also used for direct linking</li>
+<li>
+<code>contentUrl</code> : referring to the HTML content</li>
+<li>
+<code>label</code> : Text to display on topic list on help the sidebar</li>
+</ul>
+</li>
+<li>Note: By default, <code>welcome.html</code> will be displayed as default topic</li>
+</ul><h2>Demo</h2>
+
+<ul>
+<li>click here to show popup help with default topic: link (TBD)</li>
+<li>click here to show popup help with default topic: link (TBD)</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Popuphelp.js maintained by <a href="https://github.com/abiyasa">abiyasa</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
