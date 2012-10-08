@@ -196,7 +196,7 @@ $(function () {
 
         // loads list of available topics 
         loadTopicList: function (id) {
-            console.log('loadTopicList()');
+            console.log('loadTopicList(' + id + ')');
 
             // fetch and render
             var self = this;
@@ -226,7 +226,7 @@ $(function () {
 
         // shows default help message
         showWelcome: function () {
-            this.showTopic('welcome');
+            this.showTopic(-1);
         },
 
         // trigger when selecting or direct-linking to a specific topic
@@ -242,6 +242,22 @@ $(function () {
                 }
 
                 // TODO show loading animation?
+
+                // check if it's -1 (special case for auto-select the first topic)
+                if (id === -1) {
+                    // get the first topic
+                    var firstTopic = this.topicList.at(0);
+                    if (firstTopic) {
+                        id = firstTopic.id;
+                        
+                        console.log('will show the first topic \'%s\'', id);
+                    } else {
+                        //  Error on topic not found
+                        console.error('Error! cannot get the first topic!');
+                        this.topicContentView.assignContentNotFound();
+                        return;
+                    }
+                }
 
                 // get the selected content
                 var selectedContent = this.topicList.get(id);
